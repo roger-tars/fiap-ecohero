@@ -1,0 +1,236 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto+Mono:wght@400&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0e0e0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #060606;
+  color: #ffffff;
+  padding: 10px 20px;
+}
+
+.logo {
+  background-image: url('../images/logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 100px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a.active {
+  border-bottom: 2px solid #a63ed4;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-details {
+  text-align: right;
+}
+
+.user-details .username {
+  display: block;
+  font-weight: bold;
+}
+
+.user-details .points {
+  color: #6fca3a;
+  font-size: 14px;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-left: 10px;
+  background-image: url('../images/avatar.png'); 
+  background-size: cover;
+  background-position: center;
+}
+
+.main-container {
+  display: flex;
+  height: calc(100vh - 60px); 
+}
+
+aside {
+  background-color: #6fca3a;
+  width: 200px;
+  padding: 20px;
+  height: 100%; 
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+aside ul li {
+  margin-bottom: 10px;
+}
+
+aside ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #59a52c;
+}
+
+aside ul li a:hover {
+  background-color: #437d21;
+}
+
+.content {
+  padding: 20px;
+  flex-grow: 1;
+  overflow-y: auto; 
+}
+
+.content h2 {
+  font-size: 24px;
+  color: #a63ed4;
+}
+
+.challenge-details {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 20px;
+}
+
+.challenge-image-container {
+  flex-shrink: 0;
+  width: 40%;
+}
+
+.challenge-image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.challenge-info {
+  flex-grow: 1;
+}
+
+.challenge-info h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.challenge-info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.accept-button, .decline-button {
+  background-color: #060606;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.accept-button:hover, .decline-button:hover {
+  background-color: #333333;
+}
+
+.decline-button {
+  background-color: #d9534f;
+}
+
+.decline-button:hover {
+  background-color: #c9302c;
+}
+
+.upload-label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.upload-input {
+  display: none;
+}
+
+.upload-button {
+  display: inline-block;
+  background-color: #060606;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-input:focus + .upload-button,
+.upload-input:hover + .upload-button {
+  background-color: #333333;
+}
+
+#accepted-status {
+  color: #6fca3a;
+  margin-top: 20px;
+}
+
+#upload-preview {
+  margin-top: 20px;
+}
+
+#uploaded-images {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#uploaded-images img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+

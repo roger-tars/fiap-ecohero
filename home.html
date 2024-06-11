@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - EcoHero</title>
+  <link rel="stylesheet" href="css/home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo"></div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="tips.html">Dicas</a></li>
+        <li><a href="ranking.html">Ranking</a></li>
+      </ul>
+    </nav>
+    <div class="user-info">
+      <div class="user-details">
+        <span class="username">Nome Sobrenome</span>
+        <span class="points">10500xp</span>
+      </div>
+      <div class="avatar" onclick="window.location.href='edit-profile.html'"></div>
+    </div>
+  </header>
+  <div class="main-container">
+    <aside>
+      <ul>
+        <li><a href="home.html">Desafios</a></li>
+        <li><a href="rewards.html">Recompensas</a></li>
+        <li><a href="info.html">Mais informações</a></li>
+      </ul>
+    </aside>
+    <section class="content">
+      <h2>Desafios</h2>
+      <div id="quote">Carregando citação...</div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-level">Iniciante</div>
+          <div class="card-image exercise"></div>
+          <div class="card-content">
+            <h3>Atividade Física</h3>
+            <p>Tipo: streak de 3 dias</p>
+            <a href="challenge.html?type=exercise&level=beginner" class="view-more">Ver mais</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-level">Intermediário</div>
+          <div class="card-image exercise"></div>
+          <div class="card-content">
+            <h3>Atividade Física</h3>
+            <p>Tipo: streak de 5 dias</p>
+            <a href="challenge.html?type=exercise&level=intermediate" class="view-more">Ver mais</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-level">Avançado</div>
+          <div class="card-image exercise"></div>
+          <div class="card-content">
+            <h3>Atividade Física</h3>
+            <p>Tipo: streak de 7 dias</p>
+            <a href="challenge.html?type=exercise&level=advanced" class="view-more">Ver mais</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-level">Avançado</div>
+          <div class="card-image volunteering"></div>
+          <div class="card-content">
+            <h3>Voluntariado</h3>
+            <p>Tipo: 30 dias de participação</p>
+            <a href="challenge.html?type=volunteering" class="view-more">Ver mais</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-level">Iniciante</div>
+          <div class="card-image waste"></div>
+          <div class="card-content">
+            <h3>Separação do Lixo</h3>
+            <p>Tipo: streak de 5 dias</p>
+            <a href="challenge.html?type=waste" class="view-more">Ver mais</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-level">Avançado</div>
+          <div class="card-image gardening"></div>
+          <div class="card-content">
+            <h3>Horta Doméstica</h3>
+            <p>Tipo: 30 dias de cultivo</p>
+            <a href="challenge.html?type=gardening" class="view-more">Ver mais</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="js/home.js"></script>
+  <script src="js/quotes.js"></script>
+</body>
+</html>
+
+
+
+
+

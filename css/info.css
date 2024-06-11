@@ -1,0 +1,140 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto+Mono:wght@400&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0e0e0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #060606;
+  color: #ffffff;
+  padding: 10px 20px;
+}
+
+.logo {
+  background-image: url('../images/logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 100px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a.active {
+  border-bottom: 2px solid #a63ed4;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-details {
+  text-align: right;
+}
+
+.user-details .username {
+  display: block;
+  font-weight: bold;
+}
+
+.user-details .points {
+  color: #6fca3a;
+  font-size: 14px;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-left: 10px;
+  background-image: url('../images/avatar.png'); 
+  background-size: cover;
+  background-position: center;
+}
+
+.main-container {
+    display: flex;
+    height: calc(100vh - 60px); 
+}
+
+aside {
+  background-color: #6fca3a;
+  width: 200px;
+  padding: 20px;
+  height: 100%; 
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+aside ul li {
+  margin-bottom: 10px;
+}
+
+aside ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #59a52c;
+}
+
+aside ul li a:hover {
+  background-color: #437d21;
+}
+
+.content {
+  padding: 20px;
+  flex-grow: 1;
+  overflow-y: auto; 
+}
+
+.content h2 {
+  font-size: 24px;
+  color: #a63ed4;
+  margin-bottom: 20px;
+}
+
+.content h3 {
+  font-size: 20px;
+  color: #060606;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+
